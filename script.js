@@ -1,5 +1,29 @@
-$("#porfolioPage").hide();
+/*global $*/
+$("#aboutmePage").hide();
+$("#portfolioPage").hide();
+$("#contactsPage").hide();
 
-$("#porfolio").click(function(){
-    $("#porfolioPage").show();
+$(".aboutMe").click(function(){
+    $("#aboutmePage").show();
+    $("#portfolioPage").hide();
+    $("#contactsPage").hide();
+    $("#homePage").hide();
+});
+$(".portfolio").click(function(){
+    $("#aboutmePage").hide();
+    $("#portfolioPage").show();
+    $("#contactsPage").hide();
+    $("#homePage").hide();
+});
+$(".contact").click(function(){
+    $("#aboutmePage").hide();
+    $("#portfolioPage").hide();
+    $("#contactsPage").show();
+    $("#homePage").hide();
+});
+$(".tony").click(function(){
+    $("#aboutmePage").hide();
+    $("#portfolioPage").hide();
+    $("#contactsPage").hide();
+    $("#homePage").show();
 });
